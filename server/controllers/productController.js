@@ -1,5 +1,6 @@
 const Product = require("../models/productModel");
 
+// Creating a new Product
 exports.createProduct = (req, res) => {
     const { name, description, price, stock_quantity, category, image_url } = req.body;
 
@@ -14,6 +15,7 @@ exports.createProduct = (req, res) => {
     );
 };
 
+// Fetching all the products
 exports.getAllProducts = (req, res) => {
     Product.getAll((err, products) => {
         if (err) return res.status(500).json({ error: err.message });
