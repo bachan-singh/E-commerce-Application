@@ -1,0 +1,27 @@
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .logoText {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  /* Animation for hover effect */
+  .logo:hover .logoText {
+    display: inline-block;
+    animation: bounce 0.5s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
